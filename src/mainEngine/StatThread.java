@@ -2,11 +2,23 @@ package mainEngine;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
-public class StatThread {
+public class StatThread implements Runnable{
 	static ArrayBlockingQueue<String> _q;
 	static StatThreadReceiver _receiver;
 	
 	public static void main(String[] args) {
+		new Thread(new StatThread()).start();
+	}
+	
+	private static void doStatistics(String str) {
+		/*
+		 * This method should not be called by anyone but the StatThread. When the ArrayBlockingQueue is not empty, this method
+		 * will be called to update numbers and redo statistical calculations
+		 */
+	}
+
+	@Override
+	public void run() {
 		_receiver = new StatThreadReceiver(_q);
 		_q = new ArrayBlockingQueue<String>(100);
 		
@@ -21,13 +33,7 @@ public class StatThread {
 				doStatistics(_q.remove());
 			}
 		}
-	}
-	
-	private static void doStatistics(String str) {
-		/*
-		 * This method should not be called by anyone but the StatThread. When the ArrayBlockingQueue is not empty, this method
-		 * will be called to update numbers and redo statistical calculations
-		 */
+		
 	}
 	
 
