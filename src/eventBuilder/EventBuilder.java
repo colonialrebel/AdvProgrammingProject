@@ -1,4 +1,4 @@
-package pandemicGame;
+package eventBuilder;
 
 /* A text-writing gui meant to facilitate the creation of "events" for our covid-simulation game. 
  * Events are the backbone of the gameplay loop and the player will be presented with many of them each game
