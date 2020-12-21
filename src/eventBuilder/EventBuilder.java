@@ -57,9 +57,9 @@ public class EventBuilder extends JFrame
 	private JPanel p = new JPanel();
 	private JPanel p2 = new JPanel();
 	
-	public static final String[] LABEL_LIST = { "Event Name", "Description",
-			"Population", "Covid Rate","Density","Is player wearing mask"," "};
-	public static final int NUM_COLS = 7;
+	public static final String[] LABEL_LIST = {"Event Name", "Event Description", "Choice Name", "Choice Description",
+			"Population", "Covid Rate","Density","Time of Day","Is player wearing mask"," "};
+	public static final int NUM_COLS = 10;
 	private final JTextField[] textField = new JTextField[LABEL_LIST.length];
 
 	private static JCheckBox checkBox1 = new JCheckBox();
@@ -118,7 +118,7 @@ public class EventBuilder extends JFrame
 
 				eventArea.setText("Choose an event to delete");
 				for (String line : aTextArea.getText().split("\n")) {
-					String line_trimmed = line.split(",")[0];
+					String line_trimmed = line.split(",")[2];
 
 					itemChooser.addItem(line_trimmed);
 				}
@@ -140,7 +140,7 @@ public class EventBuilder extends JFrame
 				
 				eventArea.setText("Choose an event to modify");
 				for (String line : aTextArea.getText().split("\n")) {
-					String line_trimmed = line.split(",")[0];
+					String line_trimmed = line.split(",")[2];
 
 					itemChooser.addItem(line_trimmed);
 				}
