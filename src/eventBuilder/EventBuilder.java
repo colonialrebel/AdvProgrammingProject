@@ -8,6 +8,7 @@ package eventBuilder;
  * More functionality (quick stats, dropdowns, checkboxes) will be added. However, events will always be saved as individual text files to be parsed by the main game code
  * Save and Load functions to access files on pc. The left side of the GUI shows loaded events for reference when editing. New events are saved via "Add event" button.
  * 
+ * Written by Brendan Kearney
  */
 
 import java.awt.BorderLayout;
@@ -34,6 +35,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
@@ -45,7 +47,7 @@ import javax.swing.SwingConstants;
  * Files can be loaded or saved using the menu bar. New files can be created by adding events
  * The current file can be viewed on the left. Modify/delete any event (line) 
  * 		by pressing the corresponding button and selecting an event with the dragdown JComboBox
- * Requires SpringUtilities.java (https://docs.oracle.com/javase/tutorial/uiswing/examples/layout/SpringGridProject/src/layout/SpringUtilities.java)
+ * Requires SpringUtilities.java in same package (https://docs.oracle.com/javase/tutorial/uiswing/examples/layout/SpringGridProject/src/layout/SpringUtilities.java)
  */
 
 public class EventBuilder extends JFrame
@@ -117,12 +119,13 @@ public class EventBuilder extends JFrame
 				modifyButton.setVisible(false);
 
 				eventArea.setText("Choose an event to delete");
-				for (String line : aTextArea.getText().split("\n")) {
-					String line_trimmed = line.split(",")[2];
+				if(aTextArea.getText().length() > 0) {
+					for (String line : aTextArea.getText().split("\n")) {
+						String line_trimmed = line.split(",")[2];
 
-					itemChooser.addItem(line_trimmed);
+						itemChooser.addItem(line_trimmed);
+					}
 				}
-
 			}
 		});
 		
@@ -139,11 +142,14 @@ public class EventBuilder extends JFrame
 				modifyButton.setVisible(true);
 				
 				eventArea.setText("Choose an event to modify");
-				for (String line : aTextArea.getText().split("\n")) {
-					String line_trimmed = line.split(",")[2];
+				if(aTextArea.getText().length() > 0) {
+					for (String line : aTextArea.getText().split("\n")) {
+						String line_trimmed = line.split(",")[2];
 
-					itemChooser.addItem(line_trimmed);
+						itemChooser.addItem(line_trimmed);
+					}
 				}
+				
 				
 				
 			}
@@ -307,8 +313,8 @@ public class EventBuilder extends JFrame
 	{
 		super("Event Manager");
 		
-		setLocationRelativeTo(null);
-		setSize(1200,500);
+//		setLocationRelativeTo(null);
+		setSize(1800,500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().add(getBottomPanel2(), BorderLayout.SOUTH);
@@ -318,13 +324,16 @@ public class EventBuilder extends JFrame
 		p.setVisible(false);
 		
 		getContentPane().add(eventArea, BorderLayout.NORTH);
-		getContentPane().add(aTextArea, BorderLayout.LINE_START);
+		
+		JScrollPane sp = new JScrollPane(aTextArea);
+		getContentPane().add(sp, BorderLayout.LINE_START);
 		
 		p2 = getComboPanel();
 		getContentPane().add(p2, BorderLayout.LINE_END);
 		p2.setVisible(false);
 		setJMenuBar(getMyMenuBar());
 		
+		eventArea.setText("Load a file or start adding events to create a new file");
 		aTextArea.setText("");
 		setVisible(true);
 	}
