@@ -29,10 +29,6 @@ public class EventReader {
 
 
 		int counter = 0;
-
-		
-		String tempEventTitle = "";
-		String tempEventDesc = "";
 		
 		while (line1 != null) {
 
@@ -49,7 +45,7 @@ public class EventReader {
 				separated2 = Arrays.asList(line2.split("\\s*,\\s*"));
 				separated3 = Arrays.asList(line3.split("\\s*,\\s*"));
 				String tempTime = separated1.get(7);
-				System.out.println(tempTime);
+				//System.out.println(tempTime);   -> prints time of day 0 is morning, 1 is midday, 2 is afternoon, 3 is evening
 				EventObject eo = new EventObject(
 							separated1.get(0), 
 							separated1.get(1), 
@@ -74,14 +70,6 @@ public class EventReader {
 		}
 		
 		reader.close();
-
-		
-//		Event1 = "Coffee Shop,Go drink coffee inside a coffee shop,10,.00406,20,false";
-//		Event1 = ["Coffee Shop", "Go drink","10"];
-//		morning = [[Event1][Event2][Event3], etc];
-		
-		
-		
 		List<List<EventObject>> list = new ArrayList<List<EventObject>>(4);
 		list.add(morning);
 		list.add(midday);
@@ -90,8 +78,13 @@ public class EventReader {
 		
 		return list;
 	}
-//	BufferedReader reader = new BufferedReader(new FileReader(new File("fasta_input.txt")));
-	private String[] trimArray(List<String> list) {
+
+	private String[] trimArray(List<String> list) {  
+		/*
+		 * This method turns an array list into a string array
+		 * We tried converting an ArrayList<String> to a normal array but ended up with a weird scenario where the created array 
+		 * was not of type String and couldn't be cast and thus this method exists
+		*/
 		String[] arr = new String[] {list.get(2), list.get(3), list.get(4), list.get(5), list.get(6),list.get(8)};
 		
 		return arr;

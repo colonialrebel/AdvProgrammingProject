@@ -25,24 +25,27 @@ public class GameWindow {
 	JButton _choice1;
 	JButton _choice2;
 	JButton _choice3;
+	ThePandemicGame _pg;
 	public GameWindow() {//constructor
 		buildFrame();
 		buildTextArea();
 		buildChoiceArea();
-		buildMenu();
-		
+		//buildMenu();
 		_frame.setVisible(true);
 	}
-	
+	public void setGame(ThePandemicGame pg) {
+		_pg=pg;
+	}
 
 
 	private void buildFrame() {
 		_frame = new JFrame("A Covid Life");
 		_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		_frame.setLayout(new BorderLayout());
-        _frame.setSize(500,500);
+        _frame.setSize(800,640);
 	}
-	private void buildMenu() {
+	/*
+	private void buildMenu() {//Im keeping this method here even Though I am not using it, just incase I want to use it in the future
 		_menubar = new JMenuBar();
 		_menu = new JMenu("test menu");
 		_menubar.add(_menu);
@@ -51,6 +54,7 @@ public class GameWindow {
 		_menu.add(testitem);
 		_frame.getContentPane().add(BorderLayout.NORTH,_menubar);
 	}
+	*/
 	private void buildTextArea() {
         _center = new JPanel();
         _center.setLayout(new BoxLayout(_center,BoxLayout.PAGE_AXIS));
@@ -72,19 +76,19 @@ public class GameWindow {
 		
 		_choice1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				pushText("You Selected Choice 1");
+				_pg.choiceMade(1);
 			}
 		});
 		
 		_choice2.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				pushText("You Selected Choice 2");
+				_pg.choiceMade(2);
 			}
 		});
 		
 		_choice3.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				pushText("You Selected Choice 3");
+				_pg.choiceMade(3);
 			}
 		});
 		_south.setLayout(new GridLayout(1,3));

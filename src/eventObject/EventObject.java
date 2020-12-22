@@ -12,8 +12,8 @@ public class EventObject {
 	 * 0			choice title
 	 * 1			choice description
 	 * 2			population
-	 * 3			covid rate
-	 * 4			density (whole number that needs to be divided by 100)	
+	 * 3			density (whole number that needs to be divided by 100)
+	 * 4			covid rate per 1000 people	
 	 * 5 			wearing a mask ('true' or 'false')
 	 */
 	public EventObject(String eventName, String eventDescription, String[] choice1, String[] choice2,String[] choice3) {
@@ -47,16 +47,16 @@ public class EventObject {
 	}
 	public String getChoiceCovidRate(int i) {
 		if(i>3 || i<0) return "Not a valid choice";
-		if(i==1) return _c1[3];
-		if(i==2) return _c2[3];
-		if(i==3) return _c3[3];
+		if(i==1) return _c1[4];
+		if(i==2) return _c2[4];
+		if(i==3) return _c3[4];
 		return "Not a valid choice";	
 	}
 	public String getChoiceDensity(int i) {
 		if(i>3 || i<0) return "Not a valid choice";
-		if(i==1) return _c1[4];
-		if(i==2) return _c2[4];
-		if(i==3) return _c3[4];
+		if(i==1) return _c1[3];
+		if(i==2) return _c2[3];
+		if(i==3) return _c3[3];
 		return "Not a valid choice";	
 	}
 	public String getChoiceMask(int i) {
