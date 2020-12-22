@@ -1,0 +1,84 @@
+MORNING-COFFEE,It's bright and early in the morning. You definitely did not have the best night's sleep  and desperately need some caffeine to survive the day. What do you do?,Coffee Shop,Go drink coffee inside a coffee shop,10,.00406,20,0,false
+,,Coffee Drivethrough,Order coffee while wearing a mask in your car,2,.00406,10,0,true
+,,Home-brewed Coffee,Brew coffee by yourself,1,.00406,1,0,false
+Morning Workout,After waking up you walk in front of the mirror and immediately feel guilt while staring at your body. What's the plan?,Gym Workout,Go to a public gym with reduced capacity and social distancing,40,.00406,20,0,true
+,,Run Outside,Do some cardio in the great outdoors,10,.00406,1,0,true
+,,Home Workout,Lift some makeshift weights at home. Use an exercise machine. Do some yoga the choices are limitless,1,.00406,1,0,false
+Breakfast,Time for the most important meal of the day: Breakfast.,Breakfast at Home,Safer and more affordable on your wallet!,1,.00406,1,0,false
+,,Breakfast Delivery,Bacon and waffles delivered through the power of the internet,2,.00406,5,0,false
+,,Dine-in Breakfast,Enjoy a meal in a socially-distanced brunch spot,20,.00406,25,0,false
+Class,You realize that it's almost time for class. How are you attending?,In-person,Attend a lecture on campus. Masked and socially distanced,40,.00406,40,1,true
+,,Online,Attend an online lecture,1,.00406,1,1,false
+,,Don't Attend Class,Who needs class?,1,.00406,1,1,false
+Shopping,You check your closet and realize you are unprepared for winter. Time to get some new clothes!,Boutique,Buy something at a local shop,6,.00406,15,1,true
+,,Mall,Spend an hour at the mall,100,.00406,40,1,true
+,,Online,Amazon sounds great!,2,.00406,1,1,false
+Lunch,You get the midday rumbly tummy. What's on the menu?You get the midday rumbly tummy. What's on the menu?,Takeout,Order ahead and grab your lunch swiftly from a restaurant,10,.00406,10,1,true
+,,Outdoors,Sit outside at a local dining outlet,15,.00406,50,1,false
+,,Indoors,Have a proper meal at a crowded but distanced restaurant,40,.00406,50,1,false
+Friends,Your cell phone buzzes. Your friends want to hang out. What do you do?,Visit Friends' House,Catch up with friends at their place,4,.00406,75,2,true
+,,Meet with Friends at Park,Hang out with a larger group outdoors,10,.00406,20,2,true
+,,Meet with Friends Online,Use a video call to chat,1,.00406,1,2,false
+Errands,You check your to-do list and find that you've got a big backlog of things. Which do you tackle first?,Car Maintenance,Bring your car for a routine checkup,5,.00406,15,2,true
+,,Laundry,Do your laundry at the local laundromat,10,.00406,15,2,true
+,,Post Office,Ship a gift to a friend by mail,20,.00406,10,2,true
+Grocery,While getting ready to make dinner you open your fridge and find a sudden lack of anything at all inside. Where do you go or what do you do?,Farmer's Market,Go to the open-air farmer's market to pick up some fresh produce,25,.00406,15,2,true
+,,Supermarket,Go to the nearest superstore requires mask to enter,100,.00406,60,2,true
+,,Delivery,Deliver food from an online order,2,.00406,1,2,false
+Family,Your parents ask you to meet them for dinner. Where do you suggest?,Meet Family at Home,Visit your family at home for dinner,8,.00406,60,3,true
+,,Meet Family at Restaurant,Socially distanced but crowded,60,.00406,70,3,false
+,,Dine Alone for Dinner,Can't risk it. You will call your family later,1,.00406,1,3,false
+Leisure,You are bored out of you mind and it's dark outside. What should you do to have some fun?,Watch a Movie with Friends,Go to the theater and watch a film,20,.00406,25,3,true
+,,Watch TV at Home,Watch a sports game or a show at home,1,.00406,1,3,false
+,,Go on a Date,Have a friend come over and hang out,2,.00406,50,3,false
+Music,You have an itch to listen to some music,Go to a Concert,Go to a live music concert,200,.00406,75,3,true
+,,Listen to Band at Bar,Listen to a live gig at a decently empty bar,35,.00406,60,3,true
+,,Listen to Music at Home,Listen to your favorite artist on spotify,1,.00406,1,3,false
+DMV,Your License is about to expire!,In-person,Go wait in line at the DMV. It's a disorganized mess as always,35,.00406,60,0,true
+,,Appointment,Luckily you planned ahead. Go straight to the front desk at your designated time.,4,.00406,25,0,true
+,,Maybe Next Time,You don't HAVE to get it now. You can wait.,1,.00406,1,0,false
+Study,You check your calendar and see two exams next week. How will you prepare?,Library,Study at a public library. Luckily you get a table to yourself,70,.00406,50,1,true
+,,Classmates,Call up your friend and study at their place,2,.00406,80,1,false
+,,Home Study,You decide to get some peace and quiet,1,.00406,1,1,false
+Golf,Your friend's dad invites you for some holes of golf.,By Yourself,You decide to go solo. It's not very fun picking the ball up every time,1,.00406,5,2,true
+,,With a Caddy,The country club provides a free caddy. He's wearing a mask and stays away from you,2,.00406,5,2,true
+,,With the Group,Go with your friend's group. Much more lively,7,.00406,15,2,true
+Night Shift,It's time to pay off the rent again. Lucky for you gig economy has graciously given you options,Supermarket,Work as a cashier. About as frontline as it gets.,300,.00406,65,3,true
+,,Ride Share Driver,Drive people around. More isolated.,12,.00406,55,3,true
+,,Tutor,Teach a kid some math or the cello or how to code in java,2,.00406,40,3,true
+Yoga,A good yoga workout is essential to achieving inner balance before starting the day.,In-studio,Socially-distanced and indoors,15,.00406,50,0,true
+,,Outside,The same studio offers fresh-air lessons,15,.00406,20,0,true
+,,Remote,Stretch and medidate from the comfort of your living room,1,.00406,1,0,false
+Worship,Today is Sunday. How do you choose to worship?,At the church,Business as usual,50,.00406,80,1,true
+,,Religious Study,Study the holy text in a small group,8,.00406,40,1,true
+,,Worship at Home,Watch an online sermon,1,.00406,1,1,false
+Bank,You have a check that needs to be deposited. How do you do it?,Teller,Go inside and give it to the teller. It's quite busy,25,.00604,60,2,true
+,,ATM,Drop it off at the ATM outside,1,.00604,1,2,false
+,,Online Deposit,Upload it on your phone,1,.00604,1,2,false
+Holiday Party,You're obligated to attend a holiday get together with friends,Go wild!,Who needs masks? Party like it's your last day on earth,40,.00604,95,3,false
+,,Small Gathering,Only get together with close friends. Less fun but more sensible,10,.00604,50,3,true
+,,Zoom party,Disappointing for everybody!,1,.00604,1,3,false
+Emergency,Walking out of your house to start the day you step in a hole covered by leaves. Ouch! Your ankle feels painful,Local Clinic,Call your doctor and schedule an appointment,10,.00406,30,0,true
+,,Hospital,It's too urgent to wait.,30,.00406,40,0,true
+,,Walk it Off,Do nothing about your issue,1,.00406,1,0,false
+Dentist,Time for a yearly dental checkup!,Large Clinic,You decide to use the crowded neighborhood clinic,15,.00406,60,1,false
+,,Neighborhood Dentist,It's hidden in the desolate strip mall next to the abandoned RadioShack. The dentist may be a psycho or an insider trader - whichever one's scarier.,4,.00406,20,1,false
+,,Private Clinic,You only see one person the entire visit. Very spacious and distanced,2,.00406,5,1,false
+Afternoon Snack,You feel the unmistakable urge to eat something. Even though dinner's in a couple hours. ,Fast Food,A time-tested classic. Get a burger or enjoy a vanilla shake.,3,.00406,5,2,false
+,,Vending Machine,Get an overpriced granola bar or a bag of chips. Overpriced but quick,1,.00406,1,2,true
+,,Ice Cream Truck!,Classic soft-serve. Eat outside,8,.00406,10,2,false
+Holiday Gifts,You've packed plenty of holiday gifts to your friends. How do you deliver them?,Post Office,Deliver them all to the dropoff box,2,.00406,5,3,true
+,,Direct Dropoff,Give them directly to your friends,12,.00406,5,3,false
+,,Holiday Party,Arrange a gathering for everybody,20,.00406,75,3,true
+Walk Your Dog,It's that time of the week again..,Dog Park,Let your dog play at the local dog park,15,.00406,10,0,true
+,,Neighborhood Stroll,Walk your dog around the block,12,.00406,5,0,true
+,,Professional Walker,You are simply too busy! Hand your dog off to someone else for the day,2,.00406,5,0,false
+Beach,It's a beautiful day and you want some fresh air and some crisp ocean water. How do you plan this beach trip?,Beach Only,Strictly visit the beach at a secluded spot and enjoy the warm sand,5,.00406,5,1,false
+,,Beach and Boardwalk,Enjoy the local amenities as well as the sea,50,.00406,35,1,true
+,,Beach and Dining,You will definitely get hungry while at the beach right? Enjoy a local dining establishment.,75,.00406,50,1,false
+Exercise,You decide that it's about time to lose some extra weight. Where do you go?,Ultimate Frisbee,Outdoor team sport with some contact,20,.00406,50,2,true
+,,Indoor Rock Climbing,Socially-distanced - very challenging and fun,20,.00406,20,2,true
+,,Biking,A classic way of getting around and seeing nature,1,.00406,5,2,false
+Flood,Uh oh! Your roommate loaded too much laundry and flooded the place! You need somewhere to spend the night before it is fixed.,Motel,A cheap and last-minute place to sleep in a bed. Barebones,10,.00406,20,3,true
+,,Stay with Family,If they can accommodate you that is.,5,.00406,40,3,false
+,,In Your Car,It's cold and uncomfortable but gets the job done,1,.00406,1,3,false
