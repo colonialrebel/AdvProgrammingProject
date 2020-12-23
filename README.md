@@ -1,14 +1,14 @@
-# AdvProgrammingProject
--Gatphan Atassi and Brendan Kearney-
-This file explains the workings of this project.
-All relevant files are in the src directory (except for the eventFileUpdated file containing events information [a text file])
+# AdvProgrammingProject\n
+-Gatphan Atassi and Brendan Kearney-\n
+This file explains the workings of this project.\n
+All relevant files are in the src directory (except for the eventFileUpdated file containing events information [a text file])\n
 
-Contained in this src file are 3 components' files:
->eventBuilder: interactive gui that can create, modify,or delete choices for events and ultimately save them to a text file that feeds the game event information
-  >run via running EventBuilder.java
-  >requires SpringUtilities.java to provide the gui layout
->eventObject: This file contains 2 components
-  >EventObject.java: this stores an event's information including name, descrption, and three choices(with their respective data)
+Contained in this src file are 3 components' files:\n
+>eventBuilder: interactive gui that can create, modify,or delete choices for events and ultimately save them to a text file that feeds the game event information\n
+  >run via running EventBuilder.java\n
+  >requires SpringUtilities.java to provide the gui layout\n
+>eventObject: This file contains 2 components\n
+  >EventObject.java: this stores an event's information including name, descrption, and three choices(with their respective data)\n
   >EventReader.java: this program takes the file evenFileUpdated and returns to the caller (in this case the game initializer) an complex array of length 4. This array corresponds to the 4 times of day per day represented in the game. Each array element is a list of EventObjects. TLDR: the first element of the returned array is a list of all EventObjects that occur during the morning time slot
 >mainEngine: This is where everything involving the game's running goes. there are 5 components
   >ProjectRunner.java: ***To run the game, run this file.*** This sets up everything the game needs to operate including the gui, the StatsThread, calling the EventReader, and ultimately creating and launching the game object itself: ThePandemicGame
